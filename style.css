@@ -47,7 +47,6 @@ header {
     border-radius: 30px;
     background: #e3c074;
     border-style: none;
-    
 }
 
 input::placeholder {
@@ -57,6 +56,29 @@ input::placeholder {
     font-family: 'Montserrat';
     text-indent: 30px;
 }
+
+.icon {
+    position: absolute;
+    padding: 10px 20px 20px 20px;
+    font-size: 23px;
+    min-width: 40px;
+    color: #f5d99d;
+}
+
+#curr_task-list {
+    width: 48%;
+    height: 200px;
+    background: white;
+    margin: -20px auto;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    display: table;
+}
+
+
+
+
 
 
 
