@@ -19,17 +19,69 @@
     <main>
         <div class="task-container">
             <div class="add_task-container">
-                <label for="add_task" class="placeholder"></label>
-                <span class="icon"><i class="fa-solid fa-plus"></i></span>
-                <input type="text" id="add_task" placeholder="What's your focus for today?" name="task">
+                <form action="">
+                    <label for="add_task" class="placeholder"></label>
+                    <span class="icon"><i class="fa-solid fa-plus"></i></span>
+                    <input type="text" id="add_task" placeholder="What's your focus for today?" name="task">
+                </form>
                 <div id="curr_task-list">
-                    <p id="add-task_el"><input id="completed_status" type="checkbox">My Task</p>
+                    <ul id="tasks">
+                        <li>
+                            <div>
+                                <input type="checkbox" name="tasks" id="1">
+                                <span>My Task 1</span>
+                            </div>
 
+                            <button title="remove-task" class="remove-task">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <div>
+                                <input type="checkbox" name="tasks" id="2">
+                                <span>My Task 2</span>
+                            </div>
+
+                            <button title="remove-task" class="remove-task">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="total-completed">
-                <div id="complete-task_list">
-                    <p id="completed-task_el">My Task</p>
+            <div class="dropdown">
+                <button onclick="myfunc()" id="dropbtn">
+                    <div>
+                        <span id="curr_count">2</span>
+                        <span class="button_text">Completed Tasks</span>
+                    </div>
+                    <span class="button_icon">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </span>
+                </button>
+                <div id="completed-tasks" class="dropdown-content">   
+                    <ul id="completed">
+                        <li>
+                            <div>
+                                <input type="checkbox" name="tasks" id="1">
+                                <span>My Task 1</span>
+                            </div>
+
+                            <button title="remove-task" class="remove-task">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <div>
+                                <input type="checkbox" name="tasks" id="2">
+                                <span>My Task 2</span>
+                            </div>
+
+                            <button title="remove-task" class="remove-task">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

@@ -36,16 +36,15 @@ header {
 
 .add_task-container {
     text-align: center;
-    padding: 100px 0;
-
-    /* border: 10px solid grey; */
+    padding: 100px 0 0 0;
 }
 
 #add_task {
     width: 50%;
     padding: 20px;
     border-radius: 30px;
-    background: #e3c074;
+    /* background: #e3c074; */
+    background: #dab871;
     border-style: none;
 }
 
@@ -74,7 +73,124 @@ input::placeholder {
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
     display: table;
+    text-align: left;
 }
+
+#tasks {
+    margin-top: 30px;
+    list-style-type: none;
+}
+
+#tasks li {
+    margin-bottom: 1rem;
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+#tasks li div {
+    display: flex;
+    margin-left: -40px;
+    gap: .79rem;
+}
+
+input[type=checkbox] {
+    appearance: none;
+    background-color: transparent;
+    margin: 0;
+    width: 1.2rem;
+    /* border: 1px solid #f8ca66; */
+    background: #dab871;
+    /* box-shadow: inset 0px  -0.9px  3px  0.2px  rgb(19, 17, 17); */
+    box-shadow: inset 0px -6px 10px -10px black;
+    display: grid;
+    place-content: center;
+}
+
+input[type=checkbox]::before {
+    content: url();
+}
+
+/* Completed Section */
+.dropdown {
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+}
+
+.dropdown-content {
+    
+
+}
+
+.dropdown-content ul {
+
+}
+
+
+
+#dropbtn {
+    margin: auto;
+    border-radius: 30px;
+    width: 50%;
+    background-color: #03374a;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    display: inline-flex;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.button_text {
+    margin: auto;
+    white-space: nowrap;
+    font-size: 19px;
+}
+
+
+.button_text, .button_icon  {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 24px;
+    height: 100%;
+}
+
+.button_icon {
+    font-size: 1.5em;
+ }
+
+ #curr_count {
+    border-radius: 1.5em;
+    color: black;
+    font-size: 23px;
+    background: #dab871;
+    width: 1.9rem;
+    height: 1.9rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem ;
+ }
+
+#dropbtn:hover, #dropbtn:focus {
+    background-color: #03374aaf;
+  }
+
+
+
+
+
+
 
 
 
