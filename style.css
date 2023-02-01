@@ -101,14 +101,13 @@ input[type=checkbox] {
     background-color: transparent;
     margin: 0;
     width: 1.2rem;
-    /* border: 1px solid #f8ca66; */
     background: #dab871;
-    /* box-shadow: inset 0px  -0.9px  3px  0.2px  rgb(19, 17, 17); */
+    box-shadow: inset 0px  -0.9px  3px  0.2px  rgb(19, 17, 17);
     box-shadow: inset 0px -6px 10px -10px black;
     display: grid;
     place-content: center;
     position: relative;
-}
+} 
 
 input[type=checkbox]::before {
     content: "";
@@ -123,7 +122,7 @@ input[type=checkbox]::before {
 }
 
 input[type=checkbox]:checked {
-    background-color: rgb(196, 231, 247);
+    background-color: #f8ca66;
     box-shadow: inset 0px -11px 10px -10px black;
 }
 
@@ -151,7 +150,7 @@ input[type=checkbox]:checked::before {
 
 
 
-/* Completed Section */
+/* --------------------------Completed Tasks Section --------------------*/
 .dropdown {
     margin: auto;
     margin-top: 30px;
@@ -161,6 +160,23 @@ input[type=checkbox]:checked::before {
     position: relative;
 }
 
+.dropdown-menu {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    pointer-events: none;
+}
+
+.dropdown.active > .dropbtn + .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+} 
+
+
+/* -----------------button styling ----------------------*/
 .dropbtn {
     margin: auto;
     border-radius: 30px;
@@ -213,30 +229,21 @@ input[type=checkbox]:checked::before {
     background-color: #03374aaf;
   }
 
-  
+/* ----------------------------options beginning----------------- */
 
-/* .content {
-    position: absolute;
-    background: rgba(3, 55, 74, 0.5);
-    min-width: 45%;
-    display: table;
-    left: 28%;
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 5px;
-    display: none;
-    opacity: 0;
-    transform: translateX(-50%);
-    transition: 0.2s;
-    z-index: 1;
-  }
-
-#dropdown-info {
+.options {
     list-style-type: none;
     text-align: left;
+    width: 47%;
+    background-color: #03374a7f;
+    margin: auto;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    padding: 0.5rem;
   } 
 
-#dropdown-info li {
+
+.options li {
     display: block;
     display: flex;
     justify-content: space-between;
@@ -248,20 +255,39 @@ input[type=checkbox]:checked::before {
     cursor: pointer;
   }
 
-#dropdown-info button {
+  .options li div {
+    display: flex;
+    gap: .79rem;
+  }
+
+.options button {
     border: none;
     background-color: transparent;
   }
 
-#dropdown-info li button:hover {
+.options li button:hover {
     background: rgba(128, 128, 128, 0.374);
     color: #03374a
 }
 
-#dropdown-info li button:active {
+.options li button:active {
     transition: all 2 ease-in-out;
     transform: scale(1.5);
-} */
+}
+
+/* ----------------------------options ending----------------- */
+
+input#completed {
+    background: url("/assets/images/check-solid.svg");
+}
+
+input#completed::before {
+    display: none;
+}
+
+
+
+
 
 
 

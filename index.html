@@ -49,8 +49,8 @@
                     </ul>
                 </div>
             </div>
-            <div class="dropdown">
-                <button onclick="showList()" class="dropbtn">
+            <div class="dropdown" data-dropdown>
+                <button class="dropbtn" data-dropdown-button>
                     <div>
                         <span id="curr_count">2</span>
                         <span class="button_text">Completed Tasks</span>
@@ -59,12 +59,11 @@
                         <i class="fa-solid fa-angle-down"></i>
                     </span>
                 </button>
-                
-                <!-- <div id="myDropdown" class="content">   
-                    <ul id="dropdown-info">
+                <div class="dropdown-menu">
+                    <ul class="options">
                         <li>
                             <div>
-                                <input type="checkbox" name="tasks" id="1">
+                                <input class="task-el" type="checkbox" name="tasks" id="completed">
                                 <span>My Task 1</span>
                             </div>
 
@@ -74,7 +73,7 @@
                         </li>
                         <li>
                             <div>
-                                <input type="checkbox" name="tasks" id="2">
+                                <input class="task-el" type="checkbox" name="tasks" id="completed">
                                 <span>My Task 2</span>
                             </div>
 
@@ -83,7 +82,7 @@
                             </button>
                         </li>
                     </ul>
-                </div> -->
+                </div>
             </div>
         </div>
     </main>
