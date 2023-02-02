@@ -22,6 +22,7 @@ let form = document.getElementById('form');
 let input = document.getElementById('add_task');
 let tasks = document.getElementById('tasks');
 let err = document.querySelector('.err-msg');
+let taskList = document.getElementById('task-list');
 
 
 //event listener which allows sumbit button to be pressed
@@ -43,7 +44,6 @@ let formValidation = () => {
         input.value = "";
     }
 }
-
 
 let data = {};
 
@@ -67,10 +67,10 @@ let newPost = () => {
 }
 
 let deleteTask = (e) => {
-    
+    e.parentElement.remove();
 }
 
-deleteTask();
+
 
 
 
