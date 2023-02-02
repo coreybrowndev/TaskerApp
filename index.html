@@ -19,30 +19,34 @@
     <main>
         <div class="task-container">
             <div class="add_task-container">
-                <form action="">
+                <div class="err-msg"></div>
+                <form action="" id="form">
                     <label for="add_task" class="placeholder"></label>
-                    <span class="icon"><i class="fa-solid fa-plus"></i></span>
-                    <input type="text" id="add_task" placeholder="What's your focus for today?" name="task">
+                    <!-- <span class="icon"><i class="fa-solid fa-plus"></i></span> -->
+                    <button class="icon" type="submit">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <input autocomplete="off" type="text" id="add_task" placeholder="What's your focus for today?" name="task">
                 </form>
-                <div id="curr_task-list">
+                <div id="task-list">
                     <ul id="tasks">
                         <li>
                             <div>
                                 <input type="checkbox" name="tasks" id="1">
-                                <span>My Task 1</span>
+                                <span class="task">My Task 1</span>
                             </div>
 
-                            <button title="remove-task" class="remove-task">
+                            <button title="remove-task" onclick="deleteTask(this)" class="remove-task">
                                 <i class="fa-solid fa-trash-can"></i>
                             </button>
                         </li>
                         <li>
                             <div>
                                 <input type="checkbox" name="tasks" id="2">
-                                <span>My Task 2</span>
+                                <span class="task">My Task 2</span>
                             </div>
 
-                            <button title="remove-task" class="remove-task">
+                            <button title="remove-task" onclick="deleteTask(this)" class="remove-task">
                                 <i class="fa-solid fa-trash-can"></i>
                             </button>
                         </li>
