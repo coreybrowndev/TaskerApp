@@ -60,15 +60,34 @@ let newPost = () => {
         <span>${data.task}</span>
     </div>
 
-    <button title="remove-task" class="remove-task">
-        <i class="fa-solid fa-trash-can"></i>
-    </button>
-</li>`;
+    <div>
+        <button title="edit-task" onclick="editTask(this)" class="edit-task">
+            <i class="fa-solid fa-pen-to-square"></i>
+        </button>
+
+        <button title="remove-task" onclick="deleteTask(this)" class="remove-task" id="btn">
+            <i class="fa-solid fa-trash-can"></i>
+        </button>
+    </div>
+</li>`;q
 }
 
 let deleteTask = (e) => {
-    e.parentElement.remove();
+    e.parentElement.parentElement.remove();
 }
+
+let editTask = (e) => {
+    input.value = e.parentElement.previousElementSibling.children[1].innerHTML;
+    e.parentElement.parentElement.remove();
+}
+
+
+
+const span = document.getElementById("curr_count").innerHTML = 3;
+
+
+
+
 
 
 

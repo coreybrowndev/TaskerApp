@@ -144,9 +144,9 @@ input[type=checkbox]:checked::before {
 #tasks li button {
     border: none;
     background-color: transparent;
-    
-    
 }
+
+
 
 #tasks li button:hover {
     background: rgba(128, 128, 128, 0.374);

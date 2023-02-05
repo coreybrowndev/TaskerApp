@@ -35,10 +35,16 @@
                                 <input type="checkbox" name="tasks">
                                 <span class="task">My Task 1</span>
                             </div>
+                        
+                            <div>
+                                <button title="edit-task" onclick="editTask(this)" class="edit-task" id="b1">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </button>
 
-                            <button title="remove-task" onclick="deleteTask(this)" class="remove-task" id="btn">
-                                <i class="fa-solid fa-trash-can"></i>
-                            </button>
+                                <button title="remove-task" onclick="deleteTask(this)" class="remove-task" id="btn">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                            </div>
                         </li>
                         <li>
                             <div>
@@ -46,9 +52,16 @@
                                 <span class="task">My Task 2</span>
                             </div>
 
-                            <button title="remove-task" onclick="deleteTask(this)" class="remove-task" id="btn">
-                                <i class="fa-solid fa-trash-can"></i>
-                            </button>
+                            <div>
+                                <button title="edit-task" onclick="editTask(this)" class="edit-task">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                </button>
+                                
+                                <button title="remove-task" onclick="deleteTask(this)" class="remove-task" id="btn">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                            </div>
+                            
                         </li>
                     </ul>
                 </div>
