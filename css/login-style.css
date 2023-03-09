@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    /* background: linear-gradient(0.25turn, #3f87a6, #6096B4, #EEE9DA); */
+    background: url(/assets/images/mountain-img.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-container {
+    width: 800px;
+    height: 550px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.image-container {
+    position: relative;
+    top: 70px;
+    left: -20px;
+    width: min-content;
+    height: min-content;
+}
+
+.image-container img{
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+.main-flex {
+    display: flex;
+}
+
+.input-container {
+    display: block;
+    position: relative;
+    top: 40px;
+    width: 400px;
+}
+
+.input-container h2 {
+    position: relative;
+    left: 97px;
+}
+.input-container p {
+    position: relative;
+    left: 20px;
+}
+
+.user-login {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .user-login label {
+    margin-bottom: 10px;
+  }
+
+  .user-login input {
+    padding: 10px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 300px;
+  }
+  .user-login button {
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-bottom: 20px;
+  }
+
+  .login-el {
+    margin-right: 10px;
+    background-color: #007bff;
+  }
+
+  .create-el {
+    background-color: #3a3d40;
+  }
+
+  .user-login button:hover {
+    background-color: #0062cc;
+  }
+  

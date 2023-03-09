@@ -10,8 +10,6 @@ const checkbox = document.querySelectorAll("input[name=tasks]");
 const taskParent = document.querySelector("#tasks");
 let completedCounter = 0;
 
-
-
 document.addEventListener('click', e => {
 
     const isDropDownButton = e.target.matches("[data-dropdown-button]")
@@ -31,14 +29,12 @@ document.addEventListener('click', e => {
     })
 });
 
-
-//event listener which allows sumbit button to be pressed
+//event listener which allows enter button to be used
 form.addEventListener('submit', e => {
     e.preventDefault();
 
     formValidation();
 });
-
 
 let formValidation = () => {
     if(input.value === "") {
@@ -68,8 +64,9 @@ let newPost = () => {
 </li>`
 }
 
-
 let deleteTask = (e) => {
+    completedCounter--;
+    currentCompletedCounter.innerHTML = completedCounter;
     e.parentElement.parentElement.remove();
 }
 
@@ -99,6 +96,9 @@ taskParent.addEventListener("transitionend", (e) => {
 
     }
 });
+
+
+
 
 
 
