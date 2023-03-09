@@ -19,8 +19,8 @@
     <main>
         <div class="task-container">
             <div class="add_task-container">
-                <div class="err-msg"></div>
                 <form action="" id="form">
+                    <div class="err-msg"></div>
                     <label for="add_task" class="placeholder"></label>
                     <!-- <span class="icon"><i class="fa-solid fa-plus"></i></span> -->
                     <button class="icon" type="submit">
@@ -30,46 +30,14 @@
                 </form>
                 <div id="task-list">
                     <ul id="tasks">
-                        <li>
-                            <div>
-                                <input type="checkbox" name="tasks">
-                                <span class="task">My Task 1</span>
-                            </div>
                         
-                            <div>
-                                <button title="edit-task" onclick="editTask(this)" class="edit-task" id="b1">
-                                    <i class="fa-solid fa-pen-to-square"></i>
-                                </button>
-
-                                <button title="remove-task" onclick="deleteTask(this)" class="remove-task" id="btn">
-                                    <i class="fa-solid fa-trash-can"></i>
-                                </button>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <input type="checkbox" name="tasks">
-                                <span class="task">My Task 2</span>
-                            </div>
-
-                            <div>
-                                <button title="edit-task" onclick="editTask(this)" class="edit-task">
-                                    <i class="fa-solid fa-pen-to-square"></i>
-                                </button>
-                                
-                                <button title="remove-task" onclick="deleteTask(this)" class="remove-task" id="btn">
-                                    <i class="fa-solid fa-trash-can"></i>
-                                </button>
-                            </div>
-                            
-                        </li>
                     </ul>
                 </div>
             </div>
             <div class="dropdown" data-dropdown>
                 <button class="dropbtn" data-dropdown-button>
                     <div>
-                        <span id="curr_count">2</span>
+                        <span id="curr_count">0</span>
                         <span class="button_text">Completed Tasks</span>
                     </div>
                     <span class="button_icon">
@@ -77,27 +45,8 @@
                     </span>
                 </button>
                 <div class="dropdown-menu">
-                    <ul class="options">
-                        <li>
-                            <div>
-                                <input class="task-el" type="checkbox" name="tasks" id="completed">
-                                <span>My Task 1</span>
-                            </div>
-
-                            <!-- <button title="remove-task" class="remove-task">
-                                <i class="fa-solid fa-trash-can"></i>
-                            </button> -->
-                        </li>
-                        <li>
-                            <div>
-                                <input class="task-el" type="checkbox" name="tasks" id="completed">
-                                <span>My Task 2</span>
-                            </div>
-
-                            <!-- <button title="remove-task" class="remove-task">
-                                <i class="fa-solid fa-trash-can"></i>
-                            </button> -->
-                        </li>
+                    <ul id="options">
+                        
                     </ul>
                 </div>
             </div>
